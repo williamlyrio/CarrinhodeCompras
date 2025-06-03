@@ -27,6 +27,3 @@ javac InterfaceLoja.java
 java InterfaceLoja
 ```
 
-## Autor
-
-Modificado com suporte do ChatGPT.
