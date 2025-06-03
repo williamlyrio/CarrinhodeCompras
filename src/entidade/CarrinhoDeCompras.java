@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Gerencia os itens adicionados ao carrinho de compras e permite persistência.
+ * Realiza operações de adicionar, remover, salvar.
  */
 public class CarrinhoDeCompras {
     private List<Produto> itens;

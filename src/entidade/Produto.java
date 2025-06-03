@@ -1,9 +1,7 @@
 
 package entidade;
 
-/**
- * Representa um produto do mercado.
- */
+
 public class Produto {
     private int id;
     private String nome;
