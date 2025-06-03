@@ -1,0 +1,5 @@
+1,Feijão,5.5
+4,Leite,3.0
+5,Pão,2.5
+5,Pão,2.5
+9,Chocolate,7.0

@@ -28,7 +28,7 @@ public class InterfaceLoja {
 
         frame = new JFrame("Interface Loja");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(600, 450);
+        frame.setSize(700, 450);
         frame.setLayout(new BorderLayout());
 
         modeloProdutos = new DefaultListModel<>();
@@ -40,7 +40,7 @@ public class InterfaceLoja {
         JScrollPane scrollProdutos = new JScrollPane(listaProdutos);
         JScrollPane scrollCarrinho = new JScrollPane(listaCarrinho);
 
-        // Campo de busca
+        
         JTextField campoBusca = new JTextField(15);
         JButton botaoBuscar = new JButton("Buscar Produto");
 
@@ -77,7 +77,12 @@ public class InterfaceLoja {
             new Produto(2, "Arroz", 4.20),
             new Produto(3, "Café", 8.30),
             new Produto(4, "Leite", 3.00),
-            new Produto(5, "Pão", 2.50)
+            new Produto(5, "Pão", 2.50),
+            new Produto(6, "Carne K/G", 31.00),
+            new Produto (7, "Queijo", 2.50),
+            new Produto (8, "Refrigerante", 5.50),
+            new Produto (9, "Chocolate", 7.00),
+            new Produto (10, "Batata K/G", 5.40)
         };
 
         listaOriginal = Arrays.asList(produtos);

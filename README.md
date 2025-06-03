@@ -5,12 +5,11 @@ Este é um projeto Java com interface gráfica Swing para gerenciar um carrinho 
 
 ## Funcionalidades
 
-- Lista de produtos: Feijão, Arroz, Café, Leite, Pão.
+- Lista de produtos:
 - Adicionar produtos ao carrinho.
 - Remover itens do carrinho.
 - Persistência de dados:
-  - O carrinho é carregado automaticamente do arquivo `carrinho.txt`, se existir.
-  - Botão "Salvar Carrinho" para armazenar os itens atuais no arquivo.
+
 
 ## Estrutura de Arquivos
 
@@ -26,7 +25,3 @@ Compile e execute o projeto com uma IDE compatível com projetos Java Swing, com
 javac InterfaceLoja.java
 java InterfaceLoja
 ```
-
-## Autor
-
-Modificado com suporte do ChatGPT.

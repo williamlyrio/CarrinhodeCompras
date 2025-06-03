@@ -17,8 +17,8 @@ public class Produto {
     public String getNome() { return nome; }
     public double getPreco() { return preco; }
 
-    @Override
+    
     public String toString() {
-        return id + ". " + nome + " - R$" + preco;
+        return id + ". " + nome + " - R$" + String.format("%.2f", preco);
     }
 }

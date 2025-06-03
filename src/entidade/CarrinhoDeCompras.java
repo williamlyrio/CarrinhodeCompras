@@ -1,6 +1,7 @@
 
 package entidade;
 
+import entidade.Produto;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
