@@ -6,9 +6,8 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Realiza operações de adicionar, remover, salvar.
- */
+// Realiza operações de adicionar, remover, salvar.
+ 
 public class CarrinhoDeCompras {
     private List<Produto> itens;
 

@@ -1,27 +1,30 @@
+# Carrinho de Compras
 
-# Carrinho de Compras - Interface Loja
+Este projeto é uma aplicação Java com interface gráfica (Swing) que simula o funcionamento de um carrinho de compras. O usuário pode buscar produtos, adicioná-los ao carrinho, remover itens e salvar o conteúdo em arquivo.
 
-Este é um projeto Java com interface gráfica Swing para gerenciar um carrinho de compras com produtos alimentícios.
+## Informações do Projeto
+
+- **Disciplina**: Estrutura de Dados
+- **Desenvolvido em**: Java 11
+- **IDE utilizada**: NetBeans
+- **Tipo de aplicação**: Desktop (usando Swing)
 
 ## Funcionalidades
 
-- Lista de produtos:
-- Adicionar produtos ao carrinho.
-- Remover itens do carrinho.
-- Persistência de dados:
+- Listagem de produtos disponíveis
+- Busca de produtos pelo nome
+- Adição e remoção de produtos no carrinho
+- Salvamento e carregamento do carrinho em arquivo `.txt`
 
+## Como executar
 
-## Estrutura de Arquivos
+1. É necessário ter o **Java JDK 11** instalado na máquina.
+2. Baixe ou clone este repositório.
+3. Abra o projeto no **NetBeans**.
+4. Para rodar a aplicação, execute a classe `InterfaceLoja.java` que está no pacote `application`.
 
-- `Produto.java`: Representa um produto do mercado.
-- `CarrinhoDeCompras.java`: Gerencia os itens e realiza a persistência (implementado na mesma classe do projeto).
-- `InterfaceLoja.java`: Interface gráfica principal com funcionalidades de interação.
+## Executável (.jar)
 
-## Execução
+O arquivo `.jar` está localizado na pasta:
 
-Compile e execute o projeto com uma IDE compatível com projetos Java Swing, como o NetBeans.
-
-```bash
-javac InterfaceLoja.java
-java InterfaceLoja
-```
+dist/CarrinhodeCompras.jar

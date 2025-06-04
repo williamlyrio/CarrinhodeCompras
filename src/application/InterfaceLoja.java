@@ -10,9 +10,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Interface gráfica para interação com o carrinho de compras.
- */
+//Interface gráfica carrinho de compras.
+ 
 public class InterfaceLoja {
     private JFrame frame;
     private JList<Produto> listaProdutos;
@@ -24,7 +23,17 @@ public class InterfaceLoja {
 
     public InterfaceLoja() {
         carrinho = new CarrinhoDeCompras();
-        carrinho.carregarDeArquivo("carrinho.txt");
+        int opcao = JOptionPane.showConfirmDialog(
+         null,
+         "Deseja carregar o carrinho salvo?",
+         "Carregar Carrinho",
+         JOptionPane.YES_NO_OPTION
+         );
+
+        if (opcao == JOptionPane.YES_OPTION) {
+         carrinho.carregarDeArquivo("carrinho.txt");
+        }
+
 
         frame = new JFrame("Interface Loja");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -127,9 +136,5 @@ public class InterfaceLoja {
         });
 
         frame.setVisible(true);
-    }
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(InterfaceLoja::new);
     }
 }
