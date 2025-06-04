@@ -21,7 +21,7 @@ Este projeto é uma aplicação Java com interface gráfica (Swing) que simula o
 1. É necessário ter o **Java JDK 11** instalado na máquina.
 2. Baixe ou clone este repositório.
 3. Abra o projeto no **NetBeans**.
-4. Para rodar a aplicação, execute a classe `InterfaceLoja.java` que está no pacote `application`.
+4. Para rodar a aplicação, execute a classe `Main.java` que está no pacote `application`.
 
 ## Executável (.jar)
 
