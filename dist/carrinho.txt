@@ -1,0 +1,3 @@
+4,Leite,3.0
+7,Queijo,2.5
+8,Refrigerante,5.5
