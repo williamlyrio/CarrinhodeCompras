@@ -1,2 +1,0 @@
-entidade.ItemCarrinho
-entidade.CarrinhoDeCompras
