@@ -1,5 +1,5 @@
 
-package entidade;
+package entidades;
 
 //Representa um Produto
 public class Produto {
