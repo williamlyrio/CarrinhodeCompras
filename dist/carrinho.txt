@@ -1,5 +1,0 @@
-3,Café,8.3
-6,Carne K/G,31.0
-6,Carne K/G,31.0
-10,Batata K/G,5.4
-9,Chocolate,7.0
