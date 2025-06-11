@@ -1,4 +1,4 @@
-package entidades;
+package entidade;
 
 public class ItemCarrinho {
     private Produto produto;
@@ -18,7 +18,7 @@ public class ItemCarrinho {
     }
 
     public void setQuantidade(int quantidade) {
-        if (quantidade > 0) { // Garante que a quantidade seja positiva
+        if (quantidade > 0) {
             this.quantidade = quantidade;
         }
     }
@@ -27,24 +27,21 @@ public class ItemCarrinho {
         this.quantidade++;
     }
 
-    // Retorna o preço total para este item (produto.preco * quantidade)
     public double getPrecoTotalItem() {
         return produto.getPreco() * quantidade;
     }
 
-    // Como o item será exibido na JList do carrinho
     @Override
     public String toString() {
         return String.format("%s (%d) - R$%.2f", produto.getNome(), quantidade, getPrecoTotalItem());
     }
 
-    // Opcional: útil para verificar se um produto já está no carrinho
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
         ItemCarrinho that = (ItemCarrinho) obj;
-        return produto.getId() == that.produto.getId(); // Compara pelo ID do produto
+        return produto.getId() == that.produto.getId();
     }
 
     @Override

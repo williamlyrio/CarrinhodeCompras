@@ -1,11 +1,10 @@
-package entidades;
+package entidade;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-// Realiza operações de adicionar, remover, salvar e gerenciar quantidades.
 public class CarrinhoDeCompras {
     private List<ItemCarrinho> itens;
 
@@ -35,10 +34,6 @@ public class CarrinhoDeCompras {
                     .findFirst();
     }
     
-    /**
-     * NOVO MÉTODO: Calcula o valor total de todos os itens no carrinho.
-     * @return O valor total como um double.
-     */
     public double getValorTotal() {
         double total = 0.0;
         for (ItemCarrinho item : this.itens) {
@@ -78,7 +73,7 @@ public class CarrinhoDeCompras {
     public void carregarDeArquivo(String nomeArquivo) {
         File file = new File(nomeArquivo);
         if (!file.exists() || file.length() == 0) {
-            return; // Inicia carrinho vazio se não houver arquivo
+            return;
         }
         this.itens.clear();
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
